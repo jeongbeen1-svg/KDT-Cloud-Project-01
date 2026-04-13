@@ -3,7 +3,7 @@
 성장하는 중대형 동물병원의 온프레미스 운영 한계를 극복하기 위해, AWS 클라우드로의 마이그레이션 및 현대적 3-Tier 아키텍처 재설계를 수행했습니다. 24/7 무중단 서비스와 데이터 무결성을 최우선으로 하며, 예방접종 시즌 등 급격한 트래픽 증가에도 탄력적으로 대응할 수 있는 인프라를 구축하는 것이 목표입니다.
 
 # 🏗 아키텍처 설계 (Architecture)
-![Architecture Diagram](docs/AWS1팀.drawio.png)
+![Architecture Diagram](docs/AWS1team-architecture.drawio.png)
 Key Architectural Decisions
 Network Isolation (Enterprise Standard): 모든 서비스 서버(Web/WAS/DB)를 Private Subnet에 배치하여 외부 직접 노출을 차단하고, 가용 영역(Multi-AZ) 분산 배치를 통해 단일 장애 지점(SPOF)을 제거했습니다.
 Bestion Host: 이슈 발생 및 관리자 접속 시 베스천 호스트를 두어 관리하고 평소에는 사용하지 않도록 인스턴스를 중지합니다.
